@@ -1,0 +1,2 @@
+D:\Visual\Projects\Inheritance\Debug\Inheritance.exe
+D:\Visual\Projects\Inheritance\Debug\Inheritance.pdb

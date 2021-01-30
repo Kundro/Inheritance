@@ -1,26 +1,30 @@
 #include <iostream>
-#include <string.h>
 using namespace std;
 
-class Human {
+class base {
+protected:
+	int i, j;
+
 public:
-	string name;
+	void set(int a, int b) { i = a; j = b; }
+	void show() { cout << i << ' ' << j << '\n'; }
 };
 
-class Student : public Human {
+class derived : public base {
+	int k;
 public:
-	string group; 
-};
-
-class Professor : public Human {
-public:
-	string subject;
+	void setk() { k = i * j; }
+	void showk() { cout << k << '\n'; }
 };
 
 int main()
 {
 	setlocale(LC_ALL, "ru");
-	Student Andrey;
+	derived A;
+	A.set(3, 4);
+	A.show();
+	A.setk(); A.showk();
+	
 
 	return 0;
 }
